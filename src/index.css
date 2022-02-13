@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quintessential&family=Redressed&family=Roboto+Slab:wght@300&family=Supermercado+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  transition: 0.5s;}
+
+a{
+  text-decoration: none;
+}
+
+.logo{
+  display: grid;
+   align-items: center;
+  grid-column: 2/3;
+  font-family: 'Redressed', cursive;}
+
+.main_logo{
+width: 100%;
+height: 7rem;
+background-color: antiquewhite;
+display: grid;
+grid-template-columns: 10rem   1fr 2fr 1fr 10rem ;
+background-color: rgba(255, 255, 255, .4);
+ box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+ border-bottom-left-radius: 1rem;
+ border-bottom-right-radius: 1rem;
+}
+.menu-link{
+  grid-column: 3/4;
+}
+.social-media{
+  grid-column: 4/5;
+}
+.menu-link ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7rem;
+  text-decoration: none;
+}
+
+.social-media ul{
+  height: 7rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 3fr repeat(3, 1fr);}
+
+.social-media ul li:first-child{
+  grid-column: 2/3;
+}
+.social-media ul li{
+  text-align: right;
+}
+.hero-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 34rem;
+}
+.hamburger-menu{
+  display: none;
+}
+.hide-section{
+  /* background-color: aqua; */
+  width: 46.4rem;
+  font-family:cursive;
+}
+.hide-section{
+  display: none;
+}
+
+
+
+    /* media Queries */
+
+@media (max-width:768px) {
+  .menu-link{
+    display: none;
+  }
+  .social-media{
+    display: none;
+  }
+  .hamburger-menu{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 28rem;
+  }
+  .hide-section{
+    display: flex;
+  }
+.hide-section li{
+  font-size: 2rem;
+  text-decoration: underline;
+  padding: .8rem;
+  margin-left: 1rem;
+}
+.logo{text-align: center;}
+}
+@media (max-width:540px) {
+  .main_logo{
+    width: 33.5rem;
+    font-size: 1.2rem;
+  }
+  .hamburger-menu{
+    margin-left: 13rem;
+  }
+}
+
+
+
+@media (max-width:425px) {
+  .main_logo{
+    width: 46.6rem;
+    font-size: 1.2rem;
+  }
+  .hero-section img{
+    margin-left: 20rem;
+  }
+  .hero-section h1{
+    margin-left: 20rem;
+    color: blue;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .hamburger-menu{
+    margin-left: 25rem;
+  }
+}
+@media (max-width:320px) {
+  .hero-section h2{
+    text-align: center;
+    margin-left: 11rem;
+
+  }
+  .hero-section img{
+    width: 28rem;
+    margin-left: 12rem;
+  }
+}
+@media (max-width:320px) {
+  .hero-section img{
+    margin-left: 25rem;
+  }
+  .hero-section h1{
+    margin-left: 25rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
